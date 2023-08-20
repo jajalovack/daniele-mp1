@@ -1,5 +1,13 @@
 .carouselSlide
 {
     width: 100%;
-    height: 500px;
+    height: 600px;
+}
+
+.carousel-inner > .carousel-item:first-child > div
+{
+    background-image: url("../assets/hero_01.jpg");
+    background-size: cover;
+    background-position-y: -400px;
+    background-attachment: fixed;
 }

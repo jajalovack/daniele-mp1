@@ -17,17 +17,6 @@
     <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
     <script src="./scripts/popper.js@1.14.3_dist_umd_popper.min.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
-    <script>
-        const iframe = document.getElementById('heroCarousel');
-      
-        // Function to adjust the iframe height based on its content
-        function adjustIframeHeight() {
-          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-        }
-      
-        // Call the function when the iframe content has loaded and when the window is resized
-        iframe.onload = adjustIframeHeight;
-        window.addEventListener('resize', adjustIframeHeight);
-      </script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
