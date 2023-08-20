@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <section class="hero">
+        <iframe id="heroCarousel" src="heroCarousel.html">Your browser either does not support embedded webpages or are disabled in the browser settings.</iframe>
+    </section>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="./scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="./scripts/popper.js@1.14.3_dist_umd_popper.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script>
+        const iframe = document.getElementById('heroCarousel');
+      
+        // Function to adjust the iframe height based on its content
+        function adjustIframeHeight() {
+          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+      
+        // Call the function when the iframe content has loaded and when the window is resized
+        iframe.onload = adjustIframeHeight;
+        window.addEventListener('resize', adjustIframeHeight);
+      </script>
+</body>
+</html>
