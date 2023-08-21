@@ -4,6 +4,7 @@
     height: 50px;
     margin: 10px 0 10px 10px;
 }
+/* SMALL DEVICE HEADER */
 
 .background
 {
@@ -32,6 +33,7 @@
 .hero
 {
     position: relative;
+    height: calc(23.5vw + 150px);
 }
 
 .heroContent
@@ -68,9 +70,86 @@
     margin: 10px 0 0;
 }
 
+.overview1, .overview2
+{
+    padding: 10px;
+}
+
+.overviewText h1
+{
+    font-size: 30px;
+}
+
+.overview1
+{
+    background-color: #88D119;
+}
+
+.overview2
+{
+    background-color: #177FD3;
+    color: white;
+}
+
+.overviewGraphics
+{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.overviewGraphics object
+{
+    width: 40%;
+}
+
+footer
+{
+    background-color: #343A40;
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+
+.footerLogo
+{
+    text-align: center;
+    width: 120px;
+}
+
+.footerLogo object
+{
+    width: 100px;
+}
+
+.footerText
+{
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.locationIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.locationIcon object
+{
+    width: 20px;
+    filter: invert(100%);
+}
+
 /* DESKTOP VIEW */
 @media only screen and (min-width: 968px)
 {
+    .sticky-top
+    {
+        position: static;
+    }
+
     .heroLogo
     {
         top: 12%;
