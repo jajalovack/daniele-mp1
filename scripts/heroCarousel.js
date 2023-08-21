@@ -1,5 +1,5 @@
 var animation=bodymovin.loadAnimation({
-    container: document.getElementById("carousel"),
+    container: document.getElementById("backgroundCarousel"),
     renderer: "svg",
     loop: true,
     autoplay: true,
