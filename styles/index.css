@@ -1,3 +1,9 @@
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* SMALL DEVICE HEADER */
 .navbar-brand
 {
@@ -108,6 +114,11 @@
     width: 150px;
 }
 
+.overviewPic1, .overviewPic2
+{
+    display: none;
+}
+
 footer
 {
     background-color: #343A40;
@@ -127,12 +138,26 @@ footer
     width: 100px;
 }
 
-.footerText
+.address
 {
     width: 200px;
     display: flex;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.phone
+{
+    width: 200px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.phoneIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
 }
 
 .locationIcon
@@ -142,7 +167,7 @@ footer
     margin-right: 3px;
 }
 
-.locationIcon object
+.locationIcon object, .phoneIcon object
 {
     width: 20px;
     filter: invert(100%);
@@ -207,10 +232,14 @@ footer
     .footerText
     {
         margin-left: 50px;
+        display: flex;
+    }
+
+    .phone
+    {
+        margin-top: 10px;
     }
 }
-
-/* TABLET TO DESKTOP */
 
 
 /* DESKTOP VIEW */
@@ -237,5 +266,51 @@ footer
         font-size: 1.2vw;
         width: 10vw;
         margin: 0 20px;
+    }
+
+    .overview > div
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .overview > div > div
+    {
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .overview1, .overview2
+    {
+        width: 40%;
+    }
+
+    .overviewPic1, .overviewPic2
+    {
+        z-index: 10;
+        transition: 150ms;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 700px;
+        height: 393.75px;
+    }
+
+    .overviewPic1
+    {
+        background-image: url("../assets/overview1.jpg");
+        background-color: #538011;
+    }
+
+    .overviewPic2
+    {
+        background-image: url("../assets/overview2.jpg");
+        background-color: #215d8f;
+    }
+
+    .overviewPic1:hover, .overviewPic2:hover
+    {
+        transform: scale(1.01);
     }
 }
