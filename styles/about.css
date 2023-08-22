@@ -1,0 +1,135 @@
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* SMALL DEVICE HEADER */
+.navbar-brand
+{
+    height: 50px;
+    margin: 10px 0 10px 10px;
+}
+/* SMALL DEVICE HEADER */
+
+@media only screen and (min-width: 357px)
+{
+    .navbar-brand
+    {
+        height: 60px;
+        margin: 10px 50px 10px 10px;
+    }
+}
+
+.main
+{
+    background-image: url("../assets/about1.jpg");
+    background-size: cover;
+}
+
+.chunk
+{
+    padding: 10px;
+}
+
+.main > .chunk:first-child
+{
+    background-color: #88D119cc;
+}
+
+.main > .chunk:nth-child(2)
+{
+    background-color: #fffc;
+}
+
+.main > .chunk:last-child
+{
+    background-color: #177FD3cc;
+    color: white;
+}
+
+.logo
+{
+    padding: 20px;
+}
+
+footer
+{
+    background-color: #343A40;
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+
+.footerLogo
+{
+    text-align: center;
+    width: 120px;
+}
+
+.footerLogo object
+{
+    width: 100px;
+}
+
+.address
+{
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.phone
+{
+    width: 200px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.phoneIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.locationIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.locationIcon object, .phoneIcon object
+{
+    width: 20px;
+    filter: invert(100%);
+}
+
+/* TABLET VIEW */
+
+@media only screen and (min-width: 768px)
+{
+    .footerText
+    {
+        margin-left: 50px;
+        display: flex;
+    }
+
+    .phone
+    {
+        margin-top: 10px;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 992px)
+{
+    .sticky-top
+    {
+        position: static;
+    }
+
+
+}
