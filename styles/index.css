@@ -121,6 +121,9 @@ body
 
 footer
 {
+    position: absolute;
+    top: calc(100% + 118px);
+    width: 100vw;
     background-color: #343A40;
     padding: 10px;
     display: flex;
