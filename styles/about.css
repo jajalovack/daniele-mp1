@@ -2,7 +2,6 @@ body
 {
     width: 100vw;
     overflow-x: hidden;
-    min-height: 100vh;
 }
 
 /* SMALL DEVICE HEADER */
@@ -230,25 +229,8 @@ footer
 /* DESKTOP VIEW */
 @media only screen and (min-width: 1181px)
 {
-    .sticky-top
-    {
-        position: static;
-    }
-
-    .main
-    {
-        width: 60%;
-    }
-
-    .aboutLogo
-    {
-        width: 60%;
-    }
-
     .aboutImage
     {
-        display: block;
-        width: 40%;
         background-position: 0;
     }
 }

@@ -1,0 +1,225 @@
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* SMALL DEVICE HEADER */
+.navbar-brand
+{
+    height: 50px;
+    margin: 10px 0 10px 10px;
+}
+/* SMALL DEVICE HEADER */
+
+@media only screen and (min-width: 357px)
+{
+    .navbar-brand
+    {
+        height: 60px;
+        margin: 10px 50px 10px 10px;
+    }
+}
+
+.intro
+{
+    background-image: url("../assets/services_01.jpeg");
+    background-size: cover;
+}
+
+.introText
+{
+    background-color: #88D119cc;
+    padding: 10px;
+}
+
+section object
+{
+    width: 150px;
+}
+
+.homeService
+{
+    background-color: #177FD3;
+    color: white;
+}
+
+.homeService object
+{
+    filter: invert(100%);
+}
+
+.illustration
+{
+    text-align: right;
+    padding: 10px;
+}
+
+.onSite
+{
+    background-color: #88D119;
+}
+
+.homeServiceContent, .onSiteContent
+{
+    padding: 10px;
+}
+
+.homeServicePic, .onSitePic
+{
+    display: none;
+}
+
+footer
+{
+    background-color: #343A40;
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+
+.footerLogo
+{
+    text-align: center;
+    width: 120px;
+}
+
+.footerLogo object
+{
+    width: 100px;
+}
+
+.address
+{
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.phone
+{
+    width: 200px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.phoneIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.locationIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.locationIcon object, .phoneIcon object
+{
+    width: 20px;
+    filter: invert(100%);
+}
+
+/* TABLET VIEW */
+
+@media only screen and (min-width: 768px)
+{
+    section
+    {
+        position: relative;
+        width: 80%;
+        height: 300px;
+        margin: 50px 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .introText
+    {
+        height: 100%;
+        padding: 30px;
+    }
+
+    .homeService, .onSite
+    {
+        padding: 30px;
+        display: flex;
+    }
+
+    .homeServiceContent, .onSiteContent
+    {
+        width: 60%;
+    }
+
+    .homeServicePic, .onSitePic
+    {
+        display: block;
+        width: 40%;
+        border-radius: 10px;
+        transition: 150ms;
+    }
+
+    .homeServicePic:hover, .onSitePic:hover
+    {
+        transform: scale(1.02);
+    }
+
+    .homeServiceContent
+    {
+        padding: 20px;
+    }
+
+    .homeServicePic
+    {
+        background-image: url("../assets/services_02.jpeg");
+        background-size: cover;
+    }
+
+    .onSitePic
+    {
+        background-image: url("../assets/services_03.jpeg");
+        background-size: cover;
+    }
+
+    section object
+    {
+        width: 100px;
+    }
+
+    .onSite object
+    {
+        transform: translateY(-40px);
+    }
+
+    .footerText
+    {
+        margin-left: 50px;
+        display: flex;
+    }
+
+    .phone
+    {
+        margin-top: 10px;
+    }
+}
+
+/* BIGGER TABLET */
+@media only screen and (min-width: 992px)
+{
+    .sticky-top
+    {
+        position: static;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 1181px)
+{
+
+}
