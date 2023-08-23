@@ -200,7 +200,7 @@ footer
     }
 }
 
-/* DESKTOP VIEW */
+/* BIGGER TABLET */
 @media only screen and (min-width: 992px)
 {
     .sticky-top
@@ -208,10 +208,46 @@ footer
         position: static;
     }
 
+    .main
+    {
+        width: 60%;
+    }
+
+    .aboutLogo
+    {
+        width: 60%;
+    }
+
     .aboutImage
     {
         display: block;
         width: 40%;
-        background-position: 0 ;
+        background-position: -180px;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 1181px)
+{
+    .sticky-top
+    {
+        position: static;
+    }
+
+    .main
+    {
+        width: 60%;
+    }
+
+    .aboutLogo
+    {
+        width: 60%;
+    }
+
+    .aboutImage
+    {
+        display: block;
+        width: 40%;
+        background-position: 0;
     }
 }
