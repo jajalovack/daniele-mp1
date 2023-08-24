@@ -155,7 +155,50 @@ footer
     {
         min-height: calc(100vh - 214px);
     }
-    
+
+    .heightLimiter
+    {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        width: 80%;
+        display: flex;
+        height: 40vh;
+    }
+
+    .heightLimiter > .contentInnerContainer:first-child
+    {
+        width: 60%;
+    }
+
+    .heightLimiter > .contentInnerContainer:last-child
+    {
+        width: 50%;
+    }
+
+    .contactRecruitment > div
+    {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .formContainer, .contactRecruitment
+    {
+        width: 100%;
+    }
+
+    .divider
+    {
+        position: unset;
+        left: unset;
+        transform: unset;
+        width: 2px;
+        height: 100%;
+        margin: 20px;
+    }
+
     .footerText
     {
         margin-left: 50px;
@@ -180,5 +223,5 @@ footer
 /* DESKTOP VIEW */
 @media only screen and (min-width: 1181px)
 {
-    
+
 }

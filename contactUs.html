@@ -33,28 +33,32 @@
         </div>
     </nav>
     <div class="contentOuterContainer">
-        <div class="contentInnerContainer">
-            <div class="formContainer">
-                <form>
-                    <div class="form-group">
-                        <h5>Send us a message</h5>
-                        <label for="txt_email">Email address</label>
-                        <input type="email" class="form-control" id="txt_email" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="txt_message">Message</label>
-                        <textarea class="form-control" id="txt_message" placeholder="Write message" rows="3"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#messageSent">Send message</button>
-                </form>
+        <div class="heightLimiter">
+            <div class="contentInnerContainer">
+                <div class="formContainer">
+                    <form>
+                        <div class="form-group">
+                            <h5>Send us a message</h5>
+                            <label for="txt_email">Email address</label>
+                            <input type="email" class="form-control" id="txt_email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_message">Message</label>
+                            <textarea class="form-control" id="txt_message" placeholder="Write message" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#messageSent">Send message</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="divider"></div>
-        <div class="contentInnerContainer" id="joinTeam">
-            <div class="contactRecruitment">
-                <h5>Join our team</h5>
-                <h6>Send your resume to</h6>
-                <a href="mailto:recruitment@work.it.ph"><span class="recruitmentMail"><object data="./assets/gmailLogo_monochrome.svg" class="mailIcon"></object><font>recruitment@work.it.ph</font></span></a>
+            <div class="divider"></div>
+            <div class="contentInnerContainer" id="joinTeam">
+                <div class="contactRecruitment">
+                    <div>
+                        <h5>Join our team</h5>
+                        <h6>Send your resume to</h6>
+                        <a href="mailto:recruitment@work.it.ph"><span class="recruitmentMail"><object data="./assets/gmailLogo_monochrome.svg" class="mailIcon"></object><font>recruitment@work.it.ph</font></span></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
