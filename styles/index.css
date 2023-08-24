@@ -81,6 +81,17 @@ body
     font-size: 3.5vw;
     width: 35vw;
     margin: 10px 0 0;
+    padding: 0.5vw 1vw;
+}
+
+#joinTeam
+{
+    color: #F8F9FA;
+}
+
+#joinTeam:hover
+{
+    color: #343a40;
 }
 
 .overview1, .overview2
@@ -288,7 +299,32 @@ footer
 
     .overview1, .overview2
     {
+        display: block;
         width: 40%;
+    }
+
+    .overviewText, .overviewGraphics
+    {
+        width: 100%;
+    }
+
+    .overviewText p
+    {
+        width: 70%;
+    }
+
+    .overviewGraphics
+    {
+        text-align: right;
+        padding-right: 40px;
+        height: 200px;
+    }
+
+    .overviewGraphics object
+    {
+        width: unset;
+        height: 80%;
+        margin-top: 5%;
     }
 
     .overviewPic1, .overviewPic2
