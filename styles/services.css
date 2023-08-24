@@ -51,8 +51,22 @@ section object
 
 .illustration
 {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
+}
+
+.btn-success
+{
+    background-color: #88D119;
+    border-color: #88D119;
+    color: black;
+}
+
+.btn-primary
+{
+    background-color: #177FD3;
+    border-color: #177FD3;
 }
 
 .onSite
@@ -163,6 +177,7 @@ footer
         width: 40%;
         border-radius: 10px;
         transition: 150ms;
+        background-position: center;
     }
 
     .homeServicePic:hover, .onSitePic:hover
@@ -221,5 +236,46 @@ footer
 /* DESKTOP VIEW */
 @media only screen and (min-width: 1181px)
 {
+    .servicesContent
+    {
+        display: flex;
+        justify-content: center;
+    }
 
+    .homeService, .onSite
+    {
+        position: static;
+        transform: unset;
+        width: 37.5%;
+    }
+
+    .homeService
+    {
+        margin-right: 2.5%;
+    }
+
+    .onSite
+    {
+        margin-left: 2.5%;
+    }
+
+    .servicesContent object
+    {
+        width: 5vw;
+    }
+
+    .homeService object
+    {
+        transform: translateY(-2vw);
+    }
+
+    .onSite object
+    {
+        transform: translateY(-1.5vw);
+    }
+
+    .onSitePic
+    {
+        background-position: calc(50% + 20px);
+    }
 }
