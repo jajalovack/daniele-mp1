@@ -2,6 +2,7 @@ body
 {
     width: 100vw;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* SMALL DEVICE HEADER */
@@ -177,6 +178,11 @@ footer
 
 @media only screen and (min-width: 768px)
 {
+    .contentContainer
+    {
+        min-height: calc(100vh - 214px);
+    }
+
     .heroContent
     {
         display: block;

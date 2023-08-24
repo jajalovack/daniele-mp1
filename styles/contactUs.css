@@ -1,0 +1,184 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 100vh;
+}
+
+/* SMALL DEVICE HEADER */
+.navbar-brand
+{
+    height: 50px;
+    margin: 10px 0 10px 10px;
+}
+/* SMALL DEVICE HEADER */
+
+@media only screen and (min-width: 357px)
+{
+    .navbar-brand
+    {
+        height: 60px;
+        margin: 10px 50px 10px 10px;
+    }
+}
+
+.divider
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #343A40;
+    width: 90%;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.contentOuterContainer
+{
+    min-height: calc(100vh - 278px);
+}
+
+.contentInnerContainer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 20px 0;
+}
+
+form
+{
+    width: 100%;
+}
+
+#txt_message
+{
+    resize: none;
+}
+
+.contactRecruitment
+{
+    width: 80%;
+    margin: 20px;
+}
+
+.recruitmentMail > object
+{
+    pointer-events: none;
+}
+
+.recruitmentMail > font
+{
+    color: #343A40;
+}
+
+.recruitmentMail > font:hover
+{
+    text-decoration: none;
+}
+
+.mailIcon
+{
+    height: 15px;
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+
+footer
+{
+    background-color: #343A40;
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+
+.footerLogo
+{
+    text-align: center;
+    width: 120px;
+}
+
+.footerLogo object
+{
+    width: 100px;
+}
+
+.address
+{
+    width: 200px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.phone
+{
+    width: 200px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.phoneIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.locationIcon
+{
+    width: 20px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.locationIcon object, .phoneIcon object
+{
+    width: 20px;
+    filter: invert(100%);
+}
+
+/* TABLET VIEW */
+
+@media only screen and (min-width: 768px)
+{
+    .contentOuterContainer
+    {
+        min-height: calc(100vh - 214px);
+    }
+    
+    .footerText
+    {
+        margin-left: 50px;
+        display: flex;
+    }
+
+    .phone
+    {
+        margin-top: 10px;
+    }
+}
+
+/* BIGGER TABLET */
+@media only screen and (min-width: 992px)
+{
+    .sticky-top
+    {
+        position: static;
+    }
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 1181px)
+{
+    
+}
